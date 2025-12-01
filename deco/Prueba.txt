@@ -1,0 +1,8 @@
+ADDI $t0, $zero, 10
+ADDI $t1, $zero, 10
+SW $t0, 0($zero)
+LW $t2, 0($zero)
+BEQ $t0, $t1, 1
+ADDI $s3, $zero, 99
+J 0
+ADD $t3, $t0, $t1
